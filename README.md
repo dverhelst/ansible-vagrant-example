@@ -26,7 +26,11 @@ Running the project
 
     vagrant up
 
+
+
 This will provide you with 2 virtualmachines, one with httpd installed and running on it, and one without.
+
+Note: You might want to run it twice, 'complex' infra is a bit tricky in Vagrant. When running this twice, both machines will be up and you will be able to use them both in your playbooks.
 
 
 Author
