@@ -1,0 +1,13 @@
+---
+- name: playbook to test vms
+  hosts: centos60
+  user: vagrant
+
+  tasks: []
+  
+- name: install httpd
+  hosts: centos61
+  user: vagrant
+
+  roles:
+    - httpd

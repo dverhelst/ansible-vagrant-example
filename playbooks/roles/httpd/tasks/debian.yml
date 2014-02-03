@@ -1,0 +1,8 @@
+---
+- name: install apache webserver
+  apt: name=apache2 state=installed
+  sudo: True
+
+- name: start apache
+  service: name=apache2 state=started enabled=yes
+  sudo: True

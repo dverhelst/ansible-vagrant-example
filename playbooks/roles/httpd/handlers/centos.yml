@@ -1,0 +1,9 @@
+---
+- name: start httpd
+  service: name=httpd state=running enabled=yes
+
+- name: restart httpd
+  service: name=httpd state=restarted enabled=yes
+
+- name: reload httpd
+  service: name=httpd state=reloaded enabled=yes

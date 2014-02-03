@@ -1,0 +1,12 @@
+---
+- name: start httpd
+  service: name=apache2 state=running enabled=yes
+  sudo: True
+
+- name: restart httpd
+  service: name=apache2 state=restarted enabled=yes
+  sudo: True
+
+- name: reload httpd
+  service: name=apache2 state=reloaded enabled=yes
+  sudo: True
